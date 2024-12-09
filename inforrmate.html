@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!-- slick CSS -->
+    <link rel = "stylesheet" href = "slick-1.8.1/slick/slick.css">
+    <link rel = "stylesheet" href = "slick-1.8.1/slick/slick-theme.css">
+    <!-- aos -->
+    <link rel = "stylesheet" href = "aos-master/dist/aos.css">
+
+    <script src="js/menu.js"></script>
+
+    <style>
+
+            .hero-section {
+          background-color:#004a99; /* Color de fondo */
+          padding: 160px 0; /* Espaciado superior e inferior */
+          text-align: left; /* Centrar el texto */
+          
+      }
+
+      .hero-section h1 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 32px; /* Tamaño del texto */
+          color: #ffffff; /* Color del texto */
+          margin: 0px; /* Remover margen por defecto */
+          margin-left: 90px;
+      }
+
+      .hero-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    margin-left: 90px; /* Alineación con el título */
+    margin-top: 10px; /* Espacio superior */
+}
+
+      /* CSS para las tarjetas */
+      .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+        .card {
+            flex: 1 1 30%;
+            margin: 15px;
+            max-width: 30%;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card {
+            background-color: #ecf5ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        @media (max-width: 1200px) {
+            .card {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        .contact-institutions-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.contact-institutions-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.institutions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.institution {
+    flex: 1 1 30%;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.institution h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.institution p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+  </style>
+
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav class = "navbar fixed">
+      <div class = "container">
+        <div class = "brand-and-icon">
+          <div class = "brand-name">
+            <a href = "index.html">
+              <span class = "flex">
+                <i class = ""></i> refugioSOS
+              </span>
+            </a>
+          </div>
+          <div class = "nav-toggler">
+            <span>
+              <i class = "fas fa-bars"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- nav menu -->
+        <div class = "navbar-collapse">
+          <ul class = "navbar-nav">
+            <li><a href = "index.html">Inicio</a></li>
+            <li><a href = "albergues.html">Albergues</a></li>
+            <li><a href = "inforrmate.html">Informate</a></li>
+            <li><a href = "contactos.html">Contactos</a></li>
+            <li><a href = "http://127.0.0.1:8000/admin/login">Iniciar sesión</a></li>
+
+            
+            
+            <!-- <li><a href = "#team">Team</a></li> -->
+            <!-- <li>
+              <a href = "#">Posts <i class = "fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href = "#">Recent</a></li>
+                <li><a href = "#">Archive</a></li>
+                <li><a href = "#">Popular</a></li>
+              </ul>
+            </li>  -->
+           <!-- <li><a href = "#contact">Contact Us</a></li>  -->
+          </ul>
+
+          <span id = "cancel-btn">
+            <i class = "fas fa-times"></i>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+
+   
+
+    <!-- footer -->
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <script src = "slick-1.8.1/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src = "aos-master/dist/aos.js"></script>
+    <!-- numscroller -->
+    <script src = "js/numscroller-1.0.js"></script>
+    <!-- Custom JS file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

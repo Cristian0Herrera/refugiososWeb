@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <!-- slick CSS -->
+    <link rel = "stylesheet" href = "slick-1.8.1/slick/slick.css">
+    <link rel = "stylesheet" href = "slick-1.8.1/slick/slick-theme.css">
+    <!-- aos -->
+    <link rel = "stylesheet" href = "aos-master/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- Bootstrap core CSS -->
+
+
+        <!-- Additional CSS Files -->
+
+    <script src="js/menu.js"></script>
+
+
+    <style>
+
+            .hero-section {
+          background-color:#004a99; /* Color de fondo */
+          padding: 160px 0; /* Espaciado superior e inferior */
+          text-align: left; /* Centrar el texto */
+          
+      }
+
+      .hero-section h1 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 32px; /* Tamaño del texto */
+          color: #ffffff; /* Color del texto */
+          margin: 0px; /* Remover margen por defecto */
+          margin-left: 90px;
+      }
+
+      .hero-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Tamaño de la fuente */
+    color: #ffffff; /* Color del texto */
+    margin-left: 90px; /* Alineación con el título */
+    margin-top: 10px; /* Espacio superior */
+}
+
+      /* CSS para las tarjetas */
+      .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+
+        .card {
+            flex: 1 1 30%;
+            margin: 15px;
+            max-width: 30%;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card {
+            background-color: #ecf5ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        @media (max-width: 1200px) {
+            .card {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        .contact-institutions-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.contact-institutions-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.institutions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.institution {
+    flex: 1 1 30%;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.institution h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.institution p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.location-map, .featured.section {
+    flex: 1;
+}
+
+.col-lg-3 {
+    background: #dbebfc9a;
+    padding: 3px;
+
+}
+
+.info-table ul {
+  margin-top: 30px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre cada elemento */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0;
+    list-style: none;
+}
+
+.info-table li {
+    display: flex;
+    flex-direction: column; /* Para que el texto aparezca debajo de la imagen */
+    align-items: center;
+    text-align: center;
+    margin-right: 10px; /* Espacio entre cada elemento */
+}
+  </style>
+
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <nav class = "navbar fixed">
+      <div class = "container">
+        <div class = "brand-and-icon">
+          <div class = "brand-name">
+            <a href = "index.html">
+              <span class = "flex">
+                <i class = ""></i> refugioSOS
+              </span>
+            </a>
+          </div>
+          <div class = "nav-toggler">
+            <span>
+              <i class = "fas fa-bars"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- nav menu -->
+        <div class = "navbar-collapse">
+          <ul class = "navbar-nav">
+            <li><a href = "index.html">Inicio</a></li>
+            <li><a href = "albergues.html">Albergues</a></li>
+            <li><a href = "informate.html">Informate</a></li>
+            <li><a href = "contactos.html">Contactos</a></li>
+            <li><a href = "http://127.0.0.1:8000/admin/login">Iniciar sesión</a></li>
+
+            
+            
+            <!-- <li><a href = "#team">Team</a></li> -->
+            <!-- <li>
+              <a href = "#">Posts <i class = "fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href = "#">Recent</a></li>
+                <li><a href = "#">Archive</a></li>
+                <li><a href = "#">Popular</a></li>
+              </ul>
+            </li>  -->
+           <!-- <li><a href = "#contact">Contact Us</a></li>  -->
+          </ul>
+
+          <span id = "cancel-btn">
+            <i class = "fas fa-times"></i>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <h1>¡Conoce mas Refugios!</h1>
+      <p class="hero-description">Descubre cómo estos refugios están preparados para ofrecer apoyo en situaciones de emergencia y protección ante desastres naturales.</p>
+      <p class="hero-description"> Infórmate sobre sus ubicaciones y asistencia brindada para garantizar tu seguridad y bienestar.</p>
+  </section>
+
+
+    <!-- contact us -->
+   <section id = "contact">
+      <div class = "contact-content">
+        <div class = "title-content">
+          <h2 class = "title"></h2>
+        </div>
+        <div class = "contact-wrapper">
+          <div class = "location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5403.681589433589!2d-88.43994962367333!3d13.34041338700992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b39cc510939ef%3A0x44ce2f32cc38ae1c!2sCentro%20de%20Gobierno!5e1!3m2!1ses-419!2ssv!4v1732563936925!5m2!1ses-419!2ssv" width="1000" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+          <div class="featured section">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="left-image">
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="section-heading">
+                    <h2> Centro de Gobierno </h2>
+                  </div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Ubicado en el Barrio El Calvario, al final de la avenida Tte. Cnel. Napoleón H. Calito, en el Centro de Gobierno de Usulután, este refugio se activa exclusivamente en casos de emergencia.  Está preparado para brindar un espacio seguro y apoyo inmediato a personas afectadas por desastres naturales, situaciones de vulnerabilidad y otras emergencias críticas.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Cuando ocurren desastres naturales o emergencias nacionales, el Refugio de Usulután Centro abre sus puertas para servir como el principal centro de atención y apoyo en la región. Con un ambiente seguro, el refugio ofrece un lugar de protección y ayuda para quienes más lo necesitan durante momentos difíciles.
+                        </div>
+                      </div>
+                    </div>
+
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <br>
+                      <strong>Dirección:</strong>  Barrio El Calvario, final avenida Tte. Cnel. Napoleón H. Calito, Centro de Gobierno, Usulután.
+                      <br>
+                      <strong>Horario:</strong> Emergencias Nacionales: abierto las 24 horas cuando se declara una situación de emergencia.<br>
+                       <div style="margin-left: 65px;">
+                      </div>
+                      <div style="margin-left: 65px;">
+                      </div>
+                      <strong>Contacto:</strong>+503 2527-8381<br>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                   
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="info-table">
+                    <ul>
+                      <li>
+                        <img src="assets/images/4.png" alt="" style="max-width: 72px;">
+                        <h4>Espacio amplio<br><span>para un ambiente cómodo</span></h4>
+                      </li>
+                      <li>
+                        <img src="assets/images/2.png" alt="" style="max-width: 72px;">
+                        <h4>Regitro<br><span>rápido y sencillo</span></h4>
+                      </li>
+                      <li>
+                        <img src="assets/images/3.png" alt="" style="max-width: 72px;">
+                        <h4>Instalaciones <br><span>siempre limpias y ordenadas</span></h4>
+                      </li>
+                      <li>
+                        <img src="assets/images/1.png" alt="" style="max-width: 72px;">
+                        <h4>Ambiente <br><span>seguro para todos</span></h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+    <!-- footer -->
+    <footer class = "footer">
+      <div class = "container">
+        <div class = "footer-content">
+          <div class = "footer-div1">
+            <h2 class = "title">refugiosos</h2>
+            <p class = "lead">La información proporcionada en este sitio es solo para fines informativos y no sustituye el asesoramiento profesional. En caso de emergencia, sigue las instrucciones de las autoridades locales.</p>
+          </div>
+
+         
+
+          <div class = "footer-div3">
+            <h2 class = "title">RED SOCIAL</h2>
+            <span>
+              Siguenos en nuestra red social <br>
+              <br>
+              
+            </span>
+            <ul class = "social-icons">
+              <li class="flex">
+                <a href="https://www.facebook.com/share/PapKMzu4f9WCdscz/?mibextid=LQQJ4d">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+           </ul>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        Derechos Reservados: © 2024 RefugioSOS. Todos los derechos reservados.
+      </div>
+
+    </footer>
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Slick Slider -->
+    <script src = "slick-1.8.1/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src = "aos-master/dist/aos.js"></script>
+    <!-- numscroller -->
+    <script src = "js/numscroller-1.0.js"></script>
+    <!-- Custom JS file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
